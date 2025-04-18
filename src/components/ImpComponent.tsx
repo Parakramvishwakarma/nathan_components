@@ -120,15 +120,8 @@ const chartData = [
 ]
 
 const chartConfig = {
-  visitors: {
-    label: "Visitors",
-  },
-  desktop: {
-    label: "Desktop",
-    color: "#E1E1E)",
-  },
   impressions: {
-    label: "impressions",
+    label: "Impressions",
     color: "#E1E1E",
   },
 } satisfies ChartConfig
@@ -152,7 +145,7 @@ export function ImpComponent() {
 
   return (
     <Card>
-      <CardHeader className="flex items-center gap-2 space-y-0 border-b py-5 sm:flex-row">
+      <CardHeader className="flex items-center gap-2 space-y-0 py-2 sm:flex-row">
         <div className="grid flex-1 gap-1 text-center sm:text-left">
           <CardTitle>Impressions</CardTitle>
           <CardDescription>
@@ -179,7 +172,7 @@ export function ImpComponent() {
           </SelectContent>
         </Select>
       </CardHeader>
-      <CardContent className="px-2 pt-4 sm:px-6 sm:pt-6">
+      <CardContent className="px-2 pt-6 sm:px-6 sm:pt-6">
         <ChartContainer
           config={chartConfig}
           className="w-[1000px] h-[250px] max-h-[300px]"

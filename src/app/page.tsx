@@ -5,6 +5,8 @@ import TodComponent from "@/components/TodComponent";
 import GenderComponent from "@/components/GenderComponent";
 import ProgressCard from "@/components/ProgressCard";
 import ImpComponent from "@/components/ImpComponent"
+import SuburbComponent from "@/components/SuburbComponent";
+import CreativeImpComponent from "@/components/CreativeImpComponent";
 
 export default function Home() {
   return (
@@ -15,6 +17,8 @@ export default function Home() {
       <GenderComponent />
       <ProgressCard />
       <ImpComponent />
+      <SuburbComponent />
+      <CreativeImpComponent />
     </div>
   );
 }

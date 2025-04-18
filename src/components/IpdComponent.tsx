@@ -25,7 +25,7 @@ export function IpdComponent() {
   return (
     <Card>
       <CardHeader>
-        <CardTitle>Impressions per Day</CardTitle>
+        <CardTitle>Impressions by Day of Week</CardTitle>
         <CardDescription>Daily Average</CardDescription>
       </CardHeader>
       <CardContent>
@@ -53,7 +53,7 @@ export function IpdComponent() {
                 cursor={false}
                 content={<ChartTooltipContent hideLabel />}
             />
-            <Bar dataKey="impressions" fill="var(--color-impressions)" radius={8}>
+            <Bar dataKey="impressions" fill="var(--color-impressions)" radius={8} barSize={36}>
               <LabelList position="top" offset={12} className="fill-foreground" fontSize={12} />
             </Bar>
           </BarChart>
