@@ -4,6 +4,7 @@ import IpdComponent from "@/components/IpdComponent";
 import TodComponent from "@/components/TodComponent";
 import GenderComponent from "@/components/GenderComponent";
 import ProgressCard from "@/components/ProgressCard";
+import ImpComponent from "@/components/ImpComponent"
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <TodComponent />
       <GenderComponent />
       <ProgressCard />
+      <ImpComponent />
     </div>
   );
 }
